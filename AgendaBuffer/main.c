@@ -182,7 +182,7 @@ void* Buscar(void* pBuffer){
 void* Buscar_Nome(void* pBuffer){
     int* pTamanho_buffer = (int*)((char*) pBuffer + sizeof(int));
     
-    pBuffer = realloc(pBuffer,*pTamanho_buffer + sizeof(char) * 50);
+    pBuffer = realloc(pBuffer,*pTamanho_buffer + 50);
     pTamanho_buffer = (int*)((char*) pBuffer + sizeof(int));
     int* pQuantidade_pessoas = (int*)((char*)pBuffer + sizeof(int) * 2);
     
@@ -219,7 +219,7 @@ void* Buscar_Nome(void* pBuffer){
 void* Buscar_Email(void* pBuffer){
     int* pTamanho_buffer = (int*)((char*) pBuffer + sizeof(int));
     
-    pBuffer = realloc(pBuffer,*pTamanho_buffer + sizeof(char) * 100);
+    pBuffer = realloc(pBuffer,*pTamanho_buffer + 100);
     int* pQuantidade_pessoas = (int*)((char*)pBuffer + sizeof(int) * 2);
     pTamanho_buffer = (int*)((char*) pBuffer + sizeof(int));
     
@@ -257,7 +257,7 @@ void* Buscar_Email(void* pBuffer){
 void* Remover_Nome(void* pBuffer){
     int* pTamanho_buffer = (int*)((char*) pBuffer + sizeof(int));
     
-    pBuffer = realloc(pBuffer,*pTamanho_buffer + sizeof(char) * 50);
+    pBuffer = realloc(pBuffer,*pTamanho_buffer + 50);
     pTamanho_buffer = (int*)((char*) pBuffer + sizeof(int));
     int* pQuantidade_pessoas = (int*)((char*)pBuffer + sizeof(int) * 2);
     
@@ -300,7 +300,7 @@ void* Remover_Nome(void* pBuffer){
 void* Remover_Email(void* pBuffer){
     int* pTamanho_buffer = (int*)((char*) pBuffer + sizeof(int));
     
-    pBuffer = realloc(pBuffer,*pTamanho_buffer + sizeof(char) * 50);
+    pBuffer = realloc(pBuffer,*pTamanho_buffer + 100);
     pTamanho_buffer = (int*)((char*) pBuffer + sizeof(int));
     int* pQuantidade_pessoas = (int*)((char*)pBuffer + sizeof(int) * 2);
 
